@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --display-font: 'Major Mono Display', monospace;
+    --display-font: 'Source Code Pro', monospace;
 }
 
 body  {
@@ -18,7 +18,8 @@ body  {
 
 .my-name {
     font-family: var(--display-font);
-    letter-spacing: normal;
+    letter-spacing: -4px;
+    font-size: 4rem;
 }
 
 #my-pic {
