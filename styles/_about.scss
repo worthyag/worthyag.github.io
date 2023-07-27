@@ -1,0 +1,158 @@
+// TOP HERO SECTION
+#hero-top {
+    height: 92vh;
+
+    // Styling cartoon Worthy.
+    #cartoon-worthy {
+        z-index: 1;
+        margin-left: 48px;
+        height: 100px;
+        transform: scale(1.8);
+
+        &:hover {
+            content: url("../images/cartoon-smile.svg");
+        }
+    }
+
+    // Styling my name.
+    #my-name {
+        color: $accent-colour;
+        font-weight: 900;
+    }
+
+    p {
+        a{
+            color: $accent-colour;
+            font-weight: bold;
+        }
+    }
+
+    .btn-group {
+        #btn-1 {
+            @include button;
+        }
+        #btn-2 {
+            border: 2px solid $accent-colour;
+
+            &:hover {
+                background-color: $accent-hover-colour;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// STYLING THE OVERALL ABOUT MEDIA.
+section.about-media {
+    // Styling the background header image.
+    div.bg-header {
+        width: 100vw;
+        height: 220px;
+        // background-color: #9a8ecf;
+        background: linear-gradient(to bottom, rgba(253, 253, 255, 0.52), rgba(20, 25, 36, 0.72)), url("../images/about-header.jpeg");
+
+        // Styling the image.
+        img {
+           object-fit: cover; 
+        }
+
+        h1 {
+            color: #fff;
+            padding-top: 80px;
+        }
+
+        p {
+            color: #fff;
+            font-size: 1rem;
+        }
+    }
+
+    // Styling the profile picture.
+    div.profile-img img {
+        height: 200px;
+        margin-top: -100px;
+
+        &:hover {
+            content: url("../images/about-cartoon-smile.png");
+        }
+    }
+
+    // Styling the account name.
+    div.account-name {
+        width: 200px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 16px;
+        
+        margin-top: 24px;
+
+        p.a-name {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        p.a-handle {
+            color: #656;
+            font-weight: 500;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+    }
+
+    // Styling the account bio.
+    div.account-bio {
+        padding: 0 16px;
+    }
+
+    // Styling the account posts.
+    div.account-posts {
+        margin: 24px 200px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+
+        img {
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0px 0px 24px #8d8d8d;
+            }
+        }
+    }
+}
+
+// Styling the modal.
+div.modal-content {
+    width: 40vw;
+    margin-left: -100px;
+
+    p {
+        margin-top: 24px;
+    }
+
+    img {
+        width: 38vw;
+    }
+}
+
+// div.popup {
+//     width: 100vw;
+// }
+
+// .view-post {
+//     position: absolute;
+//     top: 90%;
+//     margin: 0 20vw;
+
+//     height: 60vh;
+//     width: 60vw;
+//     border-radius: 8px;
+
+//     background-color: #8ebacf;
+// }

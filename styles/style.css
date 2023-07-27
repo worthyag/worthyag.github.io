@@ -1,0 +1,237 @@
+.tags {
+  background-color: #cfe2ff;
+  color: #052c65;
+  margin: 4px;
+}
+.tags:hover {
+  background-color: #e7eef9;
+  color: #052c65;
+  cursor: default;
+}
+
+.hide-btn {
+  visibility: hidden;
+}
+
+.navbar {
+  background-color: #fff;
+  margin-bottom: 8px;
+  height: 8vh;
+}
+.navbar .navbar-collapse {
+  background-color: #fff;
+  z-index: 999;
+}
+.navbar #brand-logo {
+  height: 20px;
+  margin-right: 8px;
+}
+.navbar .dropdown-header {
+  color: #817FDF;
+  font-weight: 700;
+}
+
+#hero-top {
+  height: 92vh;
+}
+#hero-top #cartoon-worthy {
+  z-index: 1;
+  margin-left: 48px;
+  height: 100px;
+  transform: scale(1.8);
+}
+#hero-top #cartoon-worthy:hover {
+  content: url("../images/cartoon-smile.svg");
+}
+#hero-top #my-name {
+  color: #817FDF;
+  font-weight: 900;
+}
+#hero-top p a {
+  color: #817FDF;
+  font-weight: bold;
+}
+#hero-top .btn-group #btn-1 {
+  background-color: #817FDF;
+  color: #fff;
+}
+#hero-top .btn-group #btn-1:hover {
+  background-color: #6f6dc7;
+  color: #fff;
+}
+#hero-top .btn-group #btn-2 {
+  border: 2px solid #817FDF;
+}
+#hero-top .btn-group #btn-2:hover {
+  background-color: #6f6dc7;
+  color: #fff;
+}
+
+section.about-media div.bg-header {
+  width: 100vw;
+  height: 220px;
+  background: linear-gradient(to bottom, rgba(253, 253, 255, 0.52), rgba(20, 25, 36, 0.72)), url("../images/about-header.jpeg");
+}
+section.about-media div.bg-header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.about-media div.bg-header h1 {
+  color: #fff;
+  padding-top: 80px;
+}
+section.about-media div.bg-header p {
+  color: #fff;
+  font-size: 1rem;
+}
+section.about-media div.profile-img img {
+  height: 200px;
+  margin-top: -100px;
+}
+section.about-media div.profile-img img:hover {
+  content: url("../images/about-cartoon-smile.png");
+}
+section.about-media div.account-name {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16px;
+  margin-top: 24px;
+}
+section.about-media div.account-name p.a-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+section.about-media div.account-name p.a-handle {
+  color: #656;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+section.about-media div.account-bio {
+  padding: 0 16px;
+}
+section.about-media div.account-posts {
+  margin: 24px 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+section.about-media div.account-posts img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+section.about-media div.account-posts img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 24px #8d8d8d;
+}
+
+div.modal-content {
+  width: 40vw;
+  margin-left: -100px;
+}
+div.modal-content p {
+  margin-top: 24px;
+}
+div.modal-content img {
+  width: 38vw;
+}
+
+section#contact #cartoon-worthy {
+  height: 140px;
+}
+section#contact #cartoon-worthy:hover {
+  content: url("../images/cartoon-smile-contact.svg");
+}
+section#contact .p-callout {
+  color: #555;
+  font-weight: 300;
+}
+section#contact .accent-btn {
+  background-color: #817FDF;
+  color: #fff;
+}
+section#contact .accent-btn:hover {
+  background-color: #6f6dc7;
+  color: #fff;
+}
+section#contact .action-btn {
+  background-color: #817FDF;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 12px 24px;
+}
+section#contact .action-btn:hover {
+  background-color: #6f6dc7;
+  color: #fff;
+}
+section#contact .action-btn-badge {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #817FDF;
+  padding: 2px;
+  margin-right: 8px;
+}
+section#contact .action-btn-badge img {
+  height: 2.2rem;
+}
+section#contact #action-btns {
+  transform: scale(0.7);
+}
+section#contact form .send-msg-txt {
+  margin-bottom: 0;
+}
+section#contact form .resize {
+  border: 2px solid #817FDF;
+  padding: 16px 24px;
+  border-radius: 16px;
+  transform: scale(0.85);
+}
+section#contact form .resize label, section#contact form .resize input {
+  font-size: 1.2rem;
+}
+
+section#applications #cartoon-web-app:hover {
+  content: url("../images/cartoon-web-app-hover.svg");
+}
+section#applications #cartoon-non-web-app:hover {
+  content: url("../images/cartoon-non-web-app-hover.svg");
+}
+section#applications #cartoon-tech-write:hover {
+  content: url("../images/cartoon-tech-write-hover.svg");
+}
+section#applications #cartoon-create-write:hover {
+  content: url("../images/cartoon-create-write-hover.svg");
+}
+
+section .btn-custom {
+  background-color: #817FDF;
+  color: #fff;
+}
+section .btn-custom:hover {
+  background-color: #6f6dc7;
+  color: #fff;
+}
+
+.project-tags {
+  margin-top: 32px;
+}
+
+.project-details {
+  text-align: left;
+  margin-top: 24px;
+}
+
+.hide-card {
+  display: none;
+}
+
+div#success {
+  height: 90vh;
+}
+div#success img {
+  width: 400px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+// NAV MENU
+.navbar {
+    background-color: #fff;
+    margin-bottom: 8px;
+
+    .navbar-collapse {
+        background-color: #fff;
+        z-index: 999;
+    }
+
+    height: 8vh;
+
+    #brand-logo {
+        height: 20px;
+        margin-right: 8px;
+    }
+
+    .dropdown-header {
+        color: $accent-colour;
+        font-weight: 700;
+    } 
+}

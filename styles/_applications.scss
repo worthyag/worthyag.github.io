@@ -1,0 +1,31 @@
+section#applications {
+    #cartoon-web-app {
+        &:hover {
+            content: url("../images/cartoon-web-app-hover.svg");
+        }
+    }
+
+    #cartoon-non-web-app {
+        &:hover {
+            content: url("../images/cartoon-non-web-app-hover.svg");
+        }
+    }
+
+    #cartoon-tech-write {
+        &:hover {
+            content: url("../images/cartoon-tech-write-hover.svg");
+        }
+    }
+
+    #cartoon-create-write {
+        &:hover {
+            content: url("../images/cartoon-create-write-hover.svg");
+        }
+    }
+}
+
+section {
+    .btn-custom {
+        @include button;
+    }
+}

@@ -1,0 +1,62 @@
+// STYLING THE CONTACT PAGE.
+section#contact {
+    #cartoon-worthy {
+        height: 140px;
+
+        &:hover {
+            content: url("../images/cartoon-smile-contact.svg");
+        }
+    }
+
+    .p-callout {
+        color: #555;
+        font-weight: 300;
+    }
+
+    .accent-btn {
+        @include button;
+    }
+
+    .action-btn {
+        @include button;
+
+        font-size: 1.8rem;
+        padding: 12px 24px;
+    }
+
+    .action-btn-badge {
+        border: 1px solid #fff;
+        background-color: #fff;
+        color: $accent-colour;
+
+        padding: 2px;
+
+        margin-right: 8px;
+        
+        img {
+            height: 2.2rem;
+        }
+    }
+
+    #action-btns {
+        transform: scale(0.7);
+    }
+
+    form {
+        .send-msg-txt {
+            margin-bottom: 0;
+        }
+
+        .resize {
+            border: 2px solid $accent-colour;
+            padding: 16px 24px;
+            border-radius: 16px;
+
+            transform: scale(0.85);
+
+            label, input {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

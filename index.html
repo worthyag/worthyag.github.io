@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Worthy Goldman</title>
+    <link rel="icon" href="./images/w-logo.svg" />
+    <!-- Bootstrap Links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="./index.html" class="navbar-brand">
+          <img id="brand-logo" src="./images/w-logo.svg" alt="W logo" />
+          Worthy Goldman</a
+        >
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="./about.html" class="nav-link px-4">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link px-4 dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Portfolio</a
+              >
+              <ul class="dropdown-menu">
+                <!-- ---------- Software Engineering Menu ---------- -->
+                <li>
+                  <span class="dropdown-header">Software Engineering</span>
+                </li>
+                <li>
+                  <a
+                    href="./portfolio/software-engineering/applications.html"
+                    class="dropdown-item"
+                    >Applications</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./portfolio/software-engineering/projects.html"
+                    class="dropdown-item"
+                    >Projects</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- ---------- Data Science Menu ---------- -->
+                <li><span class="dropdown-header">Data Science</span></li>
+                <li>
+                  <a
+                    href="./portfolio/data-science/eda.html"
+                    class="dropdown-item"
+                    >Exploratory Data Analysis</a
+                  >
+                  <a
+                    href="./portfolio/data-science/jupyter-notebooks.html"
+                    class="dropdown-item disabled"
+                    >Jupyter Notebooks</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./portfolio/data-science/data-visualisation.html"
+                    class="dropdown-item disabled"
+                  >
+                    Data Visualisations
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- ---------- Web Development Menu ---------- -->
+                <li>
+                  <span class="dropdown-header">Web Development</span>
+                </li>
+                <li>
+                  <a
+                    href="./portfolio/web-development/websites.html"
+                    class="dropdown-item"
+                    >Websites</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./portfolio/web-development/web-design.html"
+                    class="dropdown-item"
+                    >Web Design</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <!-- ---------- Open Source Menu ---------- -->
+                  <span class="dropdown-header"
+                    >Open Source / Contributions</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./portfolio/open-source/projects.html"
+                    class="dropdown-item disabled"
+                    >Projects</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- ---------- Writing Menu ---------- -->
+                <li><span class="dropdown-header">Writing</span></li>
+                <li style="display: none">
+                  <a
+                    href="./portfolio/writing/writing.html"
+                    class="dropdown-item"
+                    >General</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./portfolio/writing/papers.html"
+                    class="dropdown-item"
+                    >Papers</a
+                  >
+                </li>
+                <li style="display: none">
+                  <a
+                    href="./portfolio/writing/books.html"
+                    class="dropdown-item disabled"
+                    >Books</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- ---------- Currently Working On Menu ---------- -->
+                <li>
+                  <span class="dropdown-header"
+                    >Currently Working On &#x2661;</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./portfolio/current/projects.html"
+                    class="dropdown-item disabled"
+                    >Projects</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link px-4">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Welcome Section -->
+      <section
+        id="hero-top"
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="d-flex mb-5 gap-5 gap-lg-0 flex-column flex-lg-row">
+          <p class="display-6 mt-5 mt-lg-0">Hello + Welcome.</p>
+          <span
+            ><img
+              id="cartoon-worthy"
+              src="./images/cartoon.svg"
+              alt="Cartoon Worthy"
+          /></span>
+        </div>
+        <h1 class="display-1 mb-4 text-center">
+          My name is <span id="my-name">Worthy Goldman</span>.
+        </h1>
+        <p class="lead w-75 text-center" style="line-height: 2.2rem">
+          I am a software engineer from London with a passion for design and
+          development. <br />
+          Head over to the Portfolio tab to see what I've been working on or the
+          <a href="./about.html">about</a> page to learn more about me!
+        </p>
+        <!-- <p class="lead w-75 text-center" style="line-height: 2.2rem">
+          I am a software engineer from London with a passion for data and
+          development. <br />
+          I build full stack applications mainly utilising the MERN and Django
+          Stacks. Head over to the Portfolio tab to see what I've been working
+          on or the <a href="./about.html">about</a> page to learn more about
+          me!
+        </p> -->
+        <!-- <p class="lead w-75 text-center" style="line-height: 2.2rem">
+          I am a writer and software engineer from London with a passion for
+          data and development. <br />
+          I build full stack applications mainly utilising the MERN and Django
+          Stacks. I specialise in both technical and creative writing. Head over
+          to the Portfolio tab to see what I've been working on or the about
+          page to learn more about me!
+        </p> -->
+        <div class="btn-group mt-5 mb-5 mb-md-0">
+          <a
+            id="btn-1"
+            class="btn"
+            href="https://github.com/worthyag"
+            target="_blank"
+          >
+            Github</a
+          >
+          <a
+            id="btn-2"
+            class="btn"
+            href="https://twitter.com/worthyisgold"
+            target="_blank"
+            >Twitter</a
+          >
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

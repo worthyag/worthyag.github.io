@@ -1,0 +1,26 @@
+@mixin button {
+    background-color: $accent-colour;
+    color: #fff;
+
+    &:hover {
+        background-color: $accent-hover-colour;
+        color: #fff;
+    }
+}
+
+.tags {
+    background-color: $secondary-colour;
+    color: #052c65;
+
+    &:hover {
+        background-color: $secondary-hover-colour;
+        color: #052c65;
+        cursor: default;
+    }
+
+    margin: 4px;
+}
+
+.hide-btn {
+    visibility: hidden;
+}
