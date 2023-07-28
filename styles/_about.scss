@@ -1,4 +1,4 @@
-// TOP HERO SECTION
+// TOP HERO SECTION - Index Page
 #hero-top {
     height: 92vh;
 
@@ -259,6 +259,11 @@ div.modal-content {
 }
 
 @media (max-width: $xxs) {
+    #hero-top {
+        height: unset;
+    }
+
+
     section.about-media {
         // Styling the account posts.
         div.account-posts {

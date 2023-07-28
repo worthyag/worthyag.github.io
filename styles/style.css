@@ -218,6 +218,9 @@ div.modal-content img {
   }
 }
 @media (max-width: 440px) {
+  #hero-top {
+    height: unset;
+  }
   section.about-media div.account-posts {
     margin: 24px 30px;
     gap: 4px;
