@@ -1,3 +1,13 @@
+.footer-custom {
+  background-color: #817FDF;
+  color: #fff;
+  font-size: 0.85rem;
+}
+.footer-custom span {
+  color: #19fe71;
+  font-size: 1.2rem;
+}
+
 .tags {
   background-color: #cfe2ff;
   color: #052c65;
