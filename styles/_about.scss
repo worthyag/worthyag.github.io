@@ -69,7 +69,9 @@ section.about-media {
 
     // Styling the profile picture.
     div.profile-img img {
-        height: 200px;
+        width: 256px;
+        min-width: 120px;
+        max-width: 20vw;
         margin-top: -100px;
 
         &:hover {
@@ -109,13 +111,16 @@ section.about-media {
     // Styling the account posts.
     div.account-posts {
         margin: 24px 200px;
+        width: fit-content;
 
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
 
         img {
-            height: 300px;
+            height: 33vw;
+            min-height: 100px;
+            max-height: 300px;
             object-fit: cover;
             border-radius: 8px;
 
@@ -141,18 +146,181 @@ div.modal-content {
     }
 }
 
-// div.popup {
-//     width: 100vw;
-// }
 
-// .view-post {
-//     position: absolute;
-//     top: 90%;
-//     margin: 0 20vw;
+// MEDIA QUERIES.
+@media (max-width: $xl) {
+    section.about-media {
+        // Styling the account posts.
+        div.account-posts {
+            margin: 24px 100px;
 
-//     height: 60vh;
-//     width: 60vw;
-//     border-radius: 8px;
+            img {
+                max-height: 250px;
+            }
+        }
+    }
 
-//     background-color: #8ebacf;
-// }
+    // Styling the modal.
+    div.modal-content {
+        width: 60vw;
+        
+        img {
+            width: 57vw;
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    section.about-media {
+        // Styling the account posts.
+        div.account-posts {
+            margin: 24px 50px;
+
+            img {
+                max-height: 200px;
+            }
+        }
+    }
+
+    // Styling the modal.
+    div.modal-content {
+        width: 70vw;
+        margin-left: -50px;
+        
+        img {
+            width: 66vw;
+        }
+    }
+}
+
+@media (max-width: $md) {
+    section.about-media {
+        // Styling the profile picture.
+        div.profile-img img {
+            margin-top: -40px;
+        }
+
+        // Styling the account posts.
+        div.account-posts {
+            margin: 24px 8px;
+            gap: 8px;
+
+            img {
+                max-height: 160px;
+            }
+        }
+    }
+
+    // Styling the modal.
+    div.modal-content {
+        width: 80vw;
+        margin-left: -30px;
+        
+        img {
+            width: 75vw;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    section.about-media {
+        // Styling the account posts.
+        div.account-posts {
+            margin: 24px 32px;
+
+            img {
+                max-height: 140px;
+            }
+        }
+    }
+
+    // Styling the modal.
+    div.modal-content {
+        width: 90vw;
+        margin-left: 20px;
+        
+        img {
+            width: 84vw;
+        }
+    }
+}
+
+@media (max-width: $xs) {
+    section.about-media {
+        // Styling the account posts.
+        div.account-posts {
+            margin: 24px 40px;
+
+            img {
+                max-height: 120px;
+            }
+        }
+    }
+}
+
+@media (max-width: $xxs) {
+    section.about-media {
+        // Styling the account posts.
+        div.account-posts {
+            margin: 24px 30px;
+            gap: 4px;
+
+            img {
+                max-height: 116px;
+            }
+        }
+    }
+}
+
+@media (max-width: $xxxs) {
+    section.about-media {
+        // Styling the account posts.
+        div.account-posts {
+            margin: 24px 12px;
+            gap: 4px;
+
+            img {
+                max-height: 110px;
+            }
+        }
+    }
+}
+
+@media (max-width: $x4s) {
+    section.about-media {
+        // Styling the account posts.
+        div.account-posts {
+            margin: 24px 12px;
+            gap: 4px;
+
+            img {
+                max-height: 100px;
+            }
+        }
+    }
+
+    // Styling the modal.
+    div.modal-content {
+        width: 85vw;
+        margin-left: 20px;
+        
+        img {
+            width: 75vw;
+        }
+    }
+}
+
+@media (max-width: $x5s) {
+    section.about-media {
+        // Styling the account posts.
+        div.account-posts {
+            margin: 24px 12px;
+            gap: 4px;
+
+            img {
+                max-height: 80px;
+                min-height: 60px;
+            }
+        }
+    }
+}

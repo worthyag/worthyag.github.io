@@ -85,7 +85,9 @@ section.about-media div.bg-header p {
   font-size: 1rem;
 }
 section.about-media div.profile-img img {
-  height: 200px;
+  width: 256px;
+  min-width: 120px;
+  max-width: 20vw;
   margin-top: -100px;
 }
 section.about-media div.profile-img img:hover {
@@ -114,12 +116,16 @@ section.about-media div.account-bio {
 }
 section.about-media div.account-posts {
   margin: 24px 200px;
+  width: -moz-fit-content;
+  width: fit-content;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
 section.about-media div.account-posts img {
-  height: 300px;
+  height: 33vw;
+  min-height: 100px;
+  max-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
@@ -140,6 +146,121 @@ div.modal-content img {
   width: 38vw;
 }
 
+@media (max-width: 1200px) {
+  section.about-media div.account-posts {
+    margin: 24px 100px;
+  }
+  section.about-media div.account-posts img {
+    max-height: 250px;
+  }
+  div.modal-content {
+    width: 60vw;
+  }
+  div.modal-content img {
+    width: 57vw;
+  }
+}
+@media (max-width: 992px) {
+  section.about-media div.account-posts {
+    margin: 24px 50px;
+  }
+  section.about-media div.account-posts img {
+    max-height: 200px;
+  }
+  div.modal-content {
+    width: 70vw;
+    margin-left: -50px;
+  }
+  div.modal-content img {
+    width: 66vw;
+  }
+}
+@media (max-width: 767px) {
+  section.about-media div.profile-img img {
+    margin-top: -40px;
+  }
+  section.about-media div.account-posts {
+    margin: 24px 8px;
+    gap: 8px;
+  }
+  section.about-media div.account-posts img {
+    max-height: 160px;
+  }
+  div.modal-content {
+    width: 80vw;
+    margin-left: -30px;
+  }
+  div.modal-content img {
+    width: 75vw;
+  }
+}
+@media (max-width: 576px) {
+  section.about-media div.account-posts {
+    margin: 24px 32px;
+  }
+  section.about-media div.account-posts img {
+    max-height: 140px;
+  }
+  div.modal-content {
+    width: 90vw;
+    margin-left: 20px;
+  }
+  div.modal-content img {
+    width: 84vw;
+  }
+}
+@media (max-width: 500px) {
+  section.about-media div.account-posts {
+    margin: 24px 40px;
+  }
+  section.about-media div.account-posts img {
+    max-height: 120px;
+  }
+}
+@media (max-width: 440px) {
+  section.about-media div.account-posts {
+    margin: 24px 30px;
+    gap: 4px;
+  }
+  section.about-media div.account-posts img {
+    max-height: 116px;
+  }
+}
+@media (max-width: 400px) {
+  section.about-media div.account-posts {
+    margin: 24px 12px;
+    gap: 4px;
+  }
+  section.about-media div.account-posts img {
+    max-height: 110px;
+  }
+}
+@media (max-width: 360px) {
+  section.about-media div.account-posts {
+    margin: 24px 12px;
+    gap: 4px;
+  }
+  section.about-media div.account-posts img {
+    max-height: 100px;
+  }
+  div.modal-content {
+    width: 85vw;
+    margin-left: 20px;
+  }
+  div.modal-content img {
+    width: 75vw;
+  }
+}
+@media (max-width: 300px) {
+  section.about-media div.account-posts {
+    margin: 24px 12px;
+    gap: 4px;
+  }
+  section.about-media div.account-posts img {
+    max-height: 80px;
+    min-height: 60px;
+  }
+}
 section#contact #cartoon-worthy {
   height: 140px;
 }
