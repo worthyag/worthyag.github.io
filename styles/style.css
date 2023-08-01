@@ -47,8 +47,8 @@
 #hero-top #cartoon-worthy {
   z-index: 1;
   margin-left: 48px;
-  height: 100px;
-  transform: scale(1.8);
+  width: 201.66px;
+  height: 180px;
 }
 #hero-top #cartoon-worthy:hover {
   content: url("../images/cartoon-smile.svg");
@@ -98,6 +98,7 @@ section.about-media div.profile-img img {
   width: 256px;
   min-width: 120px;
   max-width: 20vw;
+  height: auto;
   margin-top: -100px;
 }
 section.about-media div.profile-img img:hover {
@@ -275,6 +276,7 @@ div.modal-content img {
   }
 }
 section#contact #cartoon-worthy {
+  width: 156.85px;
   height: 140px;
 }
 section#contact #cartoon-worthy:hover {
@@ -328,6 +330,10 @@ section#contact form .resize label, section#contact form .resize input {
   font-size: 1.2rem;
 }
 
+section#applications #cartoon-web-app {
+  width: 100%;
+  height: auto;
+}
 section#applications #cartoon-web-app:hover {
   content: url("../images/cartoon-web-app-hover.svg");
 }
