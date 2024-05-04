@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Worthy Albright | Machine Learning</title>
+    <link rel="icon" href="../../images/w-logo.svg" />
+    <!-- Bootstrap Links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../../styles/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="../../index.html" class="navbar-brand">
+          <img id="brand-logo" src="../../images/w-logo.svg" alt="W logo" />
+          Worthy Albright</a
+        >
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="../../about.html" class="nav-link px-4">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link px-4 active dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                aria-current="page"
+                >Portfolio</a
+              >
+              <ul class="dropdown-menu">
+                <!-- ---------- Software Engineering Menu ---------- -->
+                <li>
+                  <span class="dropdown-header">Software Engineering</span>
+                </li>
+                <li>
+                  <a
+                    href="../software-engineering/applications.html"
+                    class="dropdown-item"
+                    >Applications</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../software-engineering/projects.html"
+                    class="dropdown-item"
+                    >Projects</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- ---------- Data Science Menu ---------- -->
+                <li><span class="dropdown-header">Data Science</span></li>
+                <li>
+                  <a href="./eda.html" class="dropdown-item"
+                    >Exploratory Data Analysis</a
+                  >
+                </li>
+                <li>
+                  <a href="./machine-learning.html" class="dropdown-item">
+                    Machine Learning
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- ---------- Web Development Menu ---------- -->
+                <li>
+                  <span class="dropdown-header">Web Development</span>
+                </li>
+                <li>
+                  <a
+                    href="../web-development/websites.html"
+                    class="dropdown-item"
+                    >Websites</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../web-development/web-design.html"
+                    class="dropdown-item"
+                    >Web Design</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <!-- ---------- Open Source Menu ---------- -->
+                  <span class="dropdown-header"
+                    >Open Source / Contributions</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../open-source/projects.html"
+                    class="dropdown-item disabled"
+                    >Projects</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- ---------- Writing Menu ---------- -->
+                <li><span class="dropdown-header">Writing</span></li>
+                <li style="display: none">
+                  <a href="../writing/writing.html" class="dropdown-item"
+                    >General</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../writing/papers.html"
+                    class="dropdown-item disabled"
+                    >Papers</a
+                  >
+                </li>
+                <li style="display: none">
+                  <a href="../writing/books.html" class="dropdown-item disabled"
+                    >Books</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- ---------- Currently Working On Menu ---------- -->
+                <li>
+                  <span class="dropdown-header"
+                    >Currently Working On &#x2661;</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../current/projects.html"
+                    class="dropdown-item disabled"
+                    >Projects</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="../../contact.html" class="nav-link px-4">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div
+        style="
+          --bs-breadcrumb-divider: url(
+            &#34;data:image/svg + xml,
+            %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
+          );
+        "
+        aria-label="breadcrumb"
+      >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">Portfolio</li>
+          <li class="breadcrumb-item">Data Science</li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Machine Learning
+          </li>
+        </ol>
+      </div>
+
+      <section>
+        <!-- DS Machine Learning-->
+        <h1 class="display-3 text-center mt-4">Machine Learning.</h1>
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-6 mb-5 mg-lg-0">
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                id="cartoon-web-app"
+                src="./images/car-mpg.png"
+                alt="placeholder"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Is your car draining your wallet?</h4>
+
+                <div class="accordion mt-4 mb-4" id="accordionProject1">
+                  <div class="accordion-item">
+                    <p class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseProject1"
+                        aria-expanded="true"
+                      >
+                        Click to learn more of this project.
+                      </button>
+                    </p>
+                    <div
+                      id="collapseProject1"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionProject1"
+                    >
+                      <div class="accordion-body">
+                        <script src="https://gist.github.com/worthyag/d2af6ddcb93285a90a9d1529d779783e.js"></script>
+                        <div class="project-tags">
+                          <button class="btn btn-sm tags">Python</button>
+                          <button class="btn btn-sm tags">
+                            Machine Learning
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Statistical Analysis
+                          </button>
+                          <button class="btn btn-sm tags">Modular Code</button>
+                          <button class="btn btn-sm tags">
+                            Data Visualisation
+                          </button>
+                          <button class="btn btn-sm tags">ML Models</button>
+                          <button class="btn btn-sm tags">
+                            Cross Validation
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Feature Engineering
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Linear Regression
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Jupyter Notebook
+                          </button>
+                          <button class="btn btn-sm tags">Pandas</button>
+                          <button class="btn btn-sm tags">Data Analysis</button>
+                          <button class="btn btn-sm tags">
+                            Data Imputation
+                          </button>
+                          <button class="btn btn-sm tags">Matplotlib</button>
+                          <button class="btn btn-sm tags">Seaborn</button>
+                          <button class="btn btn-sm tags">Data Cleaning</button>
+                          <button class="btn btn-sm tags">
+                            Data Processing
+                          </button>
+                        </div>
+                        <p class="project-details">
+                          In this project, I conducted a comprehensive analysis
+                          of factors affecting a car's miles per gallon (MPG)
+                          and built a predictive model to estimate MPG based on
+                          key features. Through data analysis and visualisation,
+                          I explored correlations between displacement,
+                          horsepower, weight, and continent of origin with MPG,
+                          identifying negative correlations and outliers.
+                          Utilising machine learning techniques, I developed a
+                          linear regression model using features like
+                          displacement, horsepower, and weight, and evaluated
+                          its performance using metrics like R2 score, mean
+                          squared error (MSE), and mean absolute error (MAE).
+                          Subsequent validation using cross-validation revealed
+                          initial overfitting, prompting the implementation of
+                          feature engineering techniques such as log and
+                          exponential transforms to improve model performance.
+                          Re-evaluation of the model post-feature engineering
+                          showed slight improvements in performance metrics.
+                          While acknowledging the study's limitations, such as
+                          dataset size and other unaccounted factors, the
+                          project underscores the iterative nature of model
+                          development and the importance of feature engineering
+                          in enhancing predictive accuracy.
+                        </p>
+                        <p class="project-details">
+                          I accomplished the following:
+                        </p>
+                        <ul class="project-details">
+                          <li>
+                            Conducted comprehensive analysis of factors
+                            influencing car MPG and built predictive model for
+                            estimating MPG.
+                          </li>
+                          <li>
+                            Explored correlations between displacement,
+                            horsepower, weight, and continent of origin with MPG
+                            through data analysis and visualisation.
+                          </li>
+                          <li>
+                            Developed linear regression model utilising features
+                            like displacement, horsepower, and weight.
+                          </li>
+                          <li>
+                            Evaluated model performance using metrics like R2
+                            score, mean squared error (MSE), and mean absolute
+                            error (MAE).
+                          </li>
+                          <li>
+                            Detected initial overfitting in model and addressed
+                            it through implementation of feature engineering
+                            techniques.
+                          </li>
+                          <li>
+                            Implemented log and exponential transforms to
+                            address skewness and capture potential non-linear
+                            relationships in features.
+                          </li>
+                          <li>
+                            Re-evaluated model post-feature engineering,
+                            observing slight improvements in performance
+                            metrics.
+                          </li>
+                          <li>
+                            Acknowledged study limitations including dataset
+                            size and unaccounted factors.
+                          </li>
+                          <li>
+                            Demonstrated iterative nature of model development
+                            and emphasized importance of feature engineering in
+                            improving predictive accuracy.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="https://gist.github.com/worthyag/d2af6ddcb93285a90a9d1529d779783e#file-Is-your-car-draining-your-wallet.ipynb"
+                  class="btn btn-custom"
+                  target="_blank"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-5 mg-lg-0">
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                id="cartoon-web-app"
+                src="./images/sentiment-analysis.png"
+                alt="placeholder"
+              />
+              <div class="card-body">
+                <h4 class="card-title">
+                  Can machines understand how you feel?
+                </h4>
+
+                <div class="accordion mt-4 mb-4" id="accordionProject2">
+                  <div class="accordion-item">
+                    <p class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseProject2"
+                        aria-expanded="true"
+                      >
+                        Click to learn more of this project.
+                      </button>
+                    </p>
+                    <div
+                      id="collapseProject2"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionProject2"
+                    >
+                      <div class="accordion-body">
+                        <script src="https://gist.github.com/worthyag/215693a2bb403c0cf1a121296911302b.js"></script>
+                        <div class="project-tags">
+                          <button class="btn btn-sm tags">Python</button>
+                          <button class="btn btn-sm tags">Deep Learning</button>
+                          <button class="btn btn-sm tags">Keras</button>
+                          <button class="btn btn-sm tags">
+                            Universal workflow of DLWP
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Sentiment Analysis
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Natural Language Processing
+                          </button>
+                          <button class="btn btn-sm tags">TensorFlow</button>
+                          <button class="btn btn-sm tags">
+                            Model Configurations
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Machine Learning
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Jupyter Notebook
+                          </button>
+                          <button class="btn btn-sm tags">Pandas</button>
+                          <button class="btn btn-sm tags">Matplotlib</button>
+                          <button class="btn btn-sm tags">Layers</button>
+                          <button class="btn btn-sm tags">Optimisers</button>
+                          <button class="btn btn-sm tags">RMSProp</button>
+                          <button class="btn btn-sm tags">Vectorisation</button>
+                          <button class="btn btn-sm tags">
+                            Model Training
+                          </button>
+                          <button class="btn btn-sm tags">Modular Code</button>
+                          <button class="btn btn-sm tags">
+                            Data Visualisation
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Experimentation
+                          </button>
+                        </div>
+                        <p class="project-details">
+                          In this project, I undertook the task of building and
+                          evaluating a sentiment analysis model for Amazon
+                          reviews. Beginning with data preprocessing, I cleaned
+                          and prepared the dataset for analysis. Next, I
+                          implemented various deep learning architectures using
+                          TensorFlow and Keras, experimenting with different
+                          model configurations, activation functions, learning
+                          rates, and dropout layers. Through systematic
+                          experimentation and evaluation, I identified the most
+                          effective model architecture for predicting sentiment
+                          in Amazon reviews. Notably, I achieved a balance
+                          between model performance and generalization to unseen
+                          data, with both training and testing accuracies
+                          exceeding 86%. Moreover, I thoroughly documented each
+                          step of the process, providing detailed analysis and
+                          insights into the model's performance. Overall, this
+                          project showcases my proficiency in natural language
+                          processing, deep learning, and experimental design,
+                          highlighting my ability to tackle complex tasks in
+                          machine learning and produce actionable insights.
+                        </p>
+                        <p class="project-details">
+                          I accomplished the following:
+                        </p>
+                        <ul class="project-details">
+                          <li>
+                            Developed a sentiment analysis model for Amazon
+                            reviews using deep learning techniques.
+                          </li>
+                          <li>
+                            Conducted comprehensive data preprocessing to clean
+                            and prepare the dataset for analysis.
+                          </li>
+                          <li>
+                            Implemented various deep learning architectures
+                            using TensorFlow and Keras.
+                          </li>
+                          <li>
+                            Experimented with different model configurations,
+                            including layers, units, activation functions, and
+                            learning rates.
+                          </li>
+                          <li>
+                            Explored the impact of dropout layers on model
+                            performance to prevent overfitting.
+                          </li>
+                          <li>
+                            Systematically evaluated model performance through
+                            training and testing accuracy metrics.
+                          </li>
+                          <li>
+                            Achieved a balance between model performance and
+                            generalisation to unseen data, with accuracies
+                            exceeding 86%.
+                          </li>
+                          <li>
+                            Provided detailed documentation and analysis of each
+                            experimentation step, demonstrating proficiency in
+                            experimental design.
+                          </li>
+                          <li>
+                            Demonstrated skills in natural language processing,
+                            deep learning, and machine learning experimentation.
+                          </li>
+                          <li>
+                            Produced actionable insights into sentiment analysis
+                            for Amazon reviews, highlighting potential
+                            applications in business intelligence and customer
+                            feedback analysis.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="https://gist.github.com/worthyag/215693a2bb403c0cf1a121296911302b"
+                  class="btn btn-custom"
+                  target="_blank"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-6 mb-5 mg-lg-0">
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                id="cartoon-web-app"
+                src="./images/machines-vs-humans.png"
+                alt="placeholder"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Machine Vs Humans</h4>
+
+                <div class="accordion mt-4 mb-4" id="accordionProject3">
+                  <div class="accordion-item">
+                    <p class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseProject3"
+                        aria-expanded="true"
+                      >
+                        Click to learn more of this project.
+                      </button>
+                    </p>
+                    <div
+                      id="collapseProject3"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionProject3"
+                    >
+                      <div class="accordion-body">
+                        <script src="https://gist.github.com/worthyag/159dd6d6c0f68e937d1f00af016a8d27.js"></script>
+                        <div class="project-tags">
+                          <button class="btn btn-sm tags">Python</button>
+                          <button class="btn btn-sm tags">
+                            Machine Learning
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Hate Speech Classifier
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Text Classifier
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Natural Language Processing
+                          </button>
+                          <button class="btn btn-sm tags">ML Models</button>
+                          <button class="btn btn-sm tags">
+                            Random Forest Classifiers
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Gradient Boosting Classifiers
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Class Imbalance
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Evaluation Metrics
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Jupyter Notebook
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Model Complexity
+                          </button>
+                          <button class="btn btn-sm tags">Pandas</button>
+                          <button class="btn btn-sm tags">Numpy</button>
+                          <button class="btn btn-sm tags">NLTK</button>
+                          <button class="btn btn-sm tags">Vectorisation</button>
+                          <button class="btn btn-sm tags">Lemmatisation</button>
+                          <button class="btn btn-sm tags">Tokenisation</button>
+                          <button class="btn btn-sm tags">
+                            Text Processing
+                          </button>
+                          <button class="btn btn-sm tags">
+                            Data Processing
+                          </button>
+                          <button class="btn btn-sm tags">Data Analysis</button>
+                          <button class="btn btn-sm tags">Modular Code</button>
+                          <button class="btn btn-sm tags">
+                            Model Training
+                          </button>
+                        </div>
+                        <p class="project-details">
+                          In this project, I conducted a comprehensive
+                          exploration of various machine learning models for
+                          hate speech detection, focusing on precision as the
+                          primary evaluation metric. Beginning with random
+                          forest classifiers, I experimented with oversampling
+                          techniques to mitigate class imbalance but observed
+                          only modest improvements over the baseline
+                          performance. Transitioning to gradient boosting
+                          classifiers, I meticulously tuned hyperparameters to
+                          optimize model precision. Surprisingly, even with
+                          lower model complexity, gradient boosting models
+                          consistently outperformed random forest models,
+                          showcasing the importance of algorithm selection and
+                          parameter tuning. Despite encountering practical
+                          constraints such as limited computational resources
+                          and dataset size, I successfully built models that
+                          surpassed the baseline precision, ultimately achieving
+                          a maximum precision of 88%. This project not only
+                          fulfilled its objectives of exploring natural language
+                          models and improving hate speech classification but
+                          also provided valuable insights into the complexities
+                          and challenges of text classification tasks.
+                        </p>
+                        <p class="project-details">
+                          I accomplished the following:
+                        </p>
+                        <ul class="project-details">
+                          <li>
+                            Conducted comprehensive exploration of machine
+                            learning models for hate speech detection.
+                          </li>
+                          <li>
+                            Focused on optimising precision as the primary
+                            evaluation metric.
+                          </li>
+                          <li>
+                            Experimented with random forest classifiers and
+                            oversampling techniques to mitigate class imbalance.
+                          </li>
+                          <li>
+                            Transitioned to gradient boosting classifiers and
+                            meticulously tuned hyperparameters for optimal
+                            performance.
+                          </li>
+                          <li>
+                            Surpassed baseline precision by achieving a maximum
+                            precision of 88%.
+                          </li>
+                          <li>
+                            Acknowledged practical constraints such as limited
+                            computational resources and dataset size.
+                          </li>
+                          <li>
+                            Successfully met project objectives of exploring
+                            natural language models and improving hate speech
+                            classification.
+                          </li>
+                          <li>
+                            Gained valuable insights into the complexities and
+                            challenges of text classification tasks.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="https://gist.github.com/worthyag/159dd6d6c0f68e937d1f00af016a8d27"
+                  class="btn btn-custom"
+                  target="_blank"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="text-center footer-custom mt-5 mt-md-0">
+      <div class="container">
+        Created with <span class="fw-bold">♡</span> by
+        <a
+          href="https://github.com/worthyag"
+          target="_blank"
+          class="link-light fw-bold"
+          >worthyag</a
+        >
+        (Worthy Albright).
+      </div>
+    </footer>
+  </body>
+</html>
